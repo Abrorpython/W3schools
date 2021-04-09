@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static '../static/bootstrap-4.0.0-dist/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container-fluid">
+    <a href="{% url 'index' %}">Bosh menu</a>
+    <br>
+    <a href="{% url 'curs' %}">Barcha kurslar</a>
+        {% block content %}
+
+        {% endblock %}
+</div>
+</body>
+</html>
